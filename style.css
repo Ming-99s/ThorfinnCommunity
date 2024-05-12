@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #867849;
+}
+a{
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color:#867849;
+    text-decoration: none;
+    position: relative;
+    padding: 0 30px;
+    
+}
+a:after{
+    content: "";
+    position: absolute;
+    background-color: #796c41;
+    height: 4px;
+    width: 0;
+    left:0;
+    bottom: -4.1vh;
+    transition: 0.3s;
+    
+}
+a:hover:after{
+    width: 100%;
+}
+a:hover{
+    color: #574e2e;
+    
+}
+nav {
+    position: fixed;
+    top: 5%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 10vh;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.boder{
+    position: absolute;
+    height: 10vh ;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    
+}
+.logo{
+    background-color: transparent;
+    height: 5vh;
+    width: 5vh;
+    margin: 1.5rem;
+    position: absolute;
+    z-index: 2;
+}
+.icon{
+    right: 1rem;
+    position: absolute;
+    z-index: 2;
+    color:#867849;
+    font-size: 2.5rem;
+    margin-top: 1.2rem;
+    letter-spacing: 0.3rem;
+}
+.mainpic{
+    position: absolute;
+    left:-28rem;
+    bottom: 0;
+}
+.title{
+    
+    height: 10rem;
+    top:5rem;
+   
+
+} 
+.text-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    padding: 2rem;
+    color:white;
+    top:15rem;
+}
+.name{
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 800;
+  font-style: bold;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin: 1rem;
+}
+.text{
+    margin-bottom: 3rem;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.button{
+    text-decoration: none;
+    border: none;
+    height: 3rem;
+    width: 15rem;
+    border-radius: 30px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.3rem;
+    color:#867849;
+}
+.fa-facebook:hover{
+    color:#574e2e;
+    font-size: larger;
+    transition: 0.3s;
+}
+.fa-square-instagram:hover{
+    color:#574e2e;
+    font-size: larger;
+    transition: 0.3s;
+}
+.fa-square-twitter:hover{
+    color:#574e2e;
+    font-size: larger;
+    transition: 0.3s;
+}
+.button:hover{
+    background-color:#574e2e;
+    color:white;
+    
+}
+.logo:hover{
+    filter: brightness(60%);
+    margin-top: 13px;
+    transition: 0.3s;
+    
+}
+
+@media only screen and (max-width:1000px)
+{
+    body
+    {
+        overflow-x: hidden;
+    }
+    .mainpic{
+        z-index: -10;
+        left:-1000px;
+    }
+    .text-side{
+        display: flex;
+        justify-content: center;
+        left: 6rem;
+        height: 60vh;
+        width: 80%;
+
+    }
+    .logo
+    {
+        top:14rem;
+        filter: brightness(100);
+    }
+    .icon{
+        font-size: 4rem;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        color:rgb(255, 255, 255);
+        margin: 2rem;
+    }
+    
+    .title
+    {
+        height: 13vh;
+    }
+    .name
+    {
+        font-size: 3.5rem;
+    }
+    .text
+    {
+        font-size: 1.5rem;
+    }
+    .button{
+        width: 20rem;
+        height: 6rem;
+        font-size: 2rem;
+    }
+    nav
+    {
+        width: 100%;
+    }
+    a{
+        font-size: 1.8rem;
+    }
+    a:after{
+        height: 7px;
+    }
+    @media (orientation:landscape)
+    {
+      .text-side{
+        top:6.5rem;
+        width: 50%;
+        left: 30rem;
+
+      }
+      a{
+        font-size: 0.7rem;
+      }
+      a:after{
+        height: 4px;
+        bottom: -3.9vh;
+      }
+      nav{
+        width: 80%;
+      }
+      .icon{
+        color:#867849;
+        font-size: 1.5rem;
+        top: -4px;
+        margin: 1rem;
+      }
+      .logo{
+        top:0;
+        filter: brightness();
+        margin: 1rem;
+      }
+      .text{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+      .name{
+        font-size: 2rem;
+      }
+      .mainpic{
+        left: -300px;
+        margin-bottom: 0;
+        height: 90vh;
+      }
+      .title{
+        height: 20vh;
+      }
+      .button{
+        font-size: 1.5rem;
+        width: 16rem;
+        padding: 0.5rem 1rem;
+      }
+    }
+}
